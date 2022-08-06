@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: #fff;
+  width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: sans-serif;
+}
+main h1 {
+  margin: 80px 0 50px;
+  font-weight: 900;
+  opacity: 0.7;
+}
+main p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: rgb(68, 64, 64);
+  opacity: 0.8;
+}
+main p a {
+  text-decoration: none;
+  color: red;
+  font-weight: 500;
+  font-size: 16px;
+}
+main .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 50px;
+  margin-top: 80px;
+}
+main .buttons .i-am-new {
+  background-color: red;
+  border: none;
+  width: 46%;
+  height: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+main .buttons .i-am-new a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
+main .buttons .i-am-new a:hover {
+  background-color: #fff;
+  color: red;
+}
+main .buttons .i-need-experience {
+  border: 2px solid red;
+  width: 46%;
+  height: 100%;
+  text-align: center;
+  padding-top: 15px;
+}
+main .buttons .i-need-experience a {
+  text-decoration: none;
+  color: red;
+  font-weight: 500;
+  font-size: 16px;
+}
+main .buttons .i-need-experience a:hover {
+  background-color: red;
+  color: #fff;
+}/*# sourceMappingURL=landing-page.css.map */

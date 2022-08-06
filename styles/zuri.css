@@ -1,0 +1,528 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px 0 50px;
+}
+header .nav {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav .nav-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+  height: 100%;
+}
+header .nav .nav-div .div {
+  color: gray;
+  font-size: 20px;
+  font-weight: 500;
+}
+header .nav .Enroll {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding-left: 50px;
+}
+header .nav .Enroll .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  background-color: pink;
+  border: 15px solid orangered;
+  border-radius: 100%;
+  position: absolute;
+}
+header .nav .Enroll .circle img {
+  width: 90px;
+  height: 90px;
+}
+header .nav .Enroll .enroll {
+  width: 200px;
+  height: 50px;
+  background-color: orangered;
+  color: #fff;
+  border: none;
+  border-radius: 0 100px 100px 0;
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 77px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+main .section1 {
+  margin: 120px 30px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  row-gap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+main .section1 .male {
+  width: 30%;
+  height: 100%;
+  padding: 10% 0 0 0;
+}
+main .section1 .male img {
+  width: 350px;
+  height: 400px;
+}
+main .section1 .section1-center {
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  padding-top: 100px;
+}
+main .section1 .section1-center .red-text {
+  color: red;
+  font-size: 20px;
+  font-weight: 500;
+}
+main .section1 .section1-center .large-text {
+  color: black;
+  font-size: 48px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+main .section1 .section1-center .section1-line {
+  margin: -50px -150px 0 0;
+  height: 20%;
+  width: 30%;
+}
+main .section1 .section1-center .gray-text {
+  color: gray;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 60px 0 60px;
+}
+main .section1 .section1-center .button {
+  background-color: orangered;
+  width: 180px;
+  height: 50px;
+  border: none;
+  border-radius: 100px;
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 30px auto;
+}
+main .section1 .section1-center .section1-wire {
+  margin: -30px -170px 0 0;
+}
+main .section1 .lady {
+  width: 30%;
+  height: 100%;
+  padding: 10% 0 0 0;
+}
+main .section1 .lady img {
+  width: 350px;
+  height: 350px;
+}
+main .section2 {
+  margin: 100px 30px 0;
+  display: flex;
+  flex-direction: row;
+  row-gap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+}
+main .section2 .ingressive {
+  width: 35%;
+  height: 100%;
+  font-size: 25px;
+  color: black;
+  font-weight: 900;
+  text-align: center;
+  padding: 100px 30px 0 30px;
+}
+main .section2 .ingressive-image {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section2 .ingressive-image img {
+  width: 100%;
+  height: 100%;
+}
+main .section2 .increase {
+  width: 33%;
+  height: 100%;
+  font-size: 28px;
+  color: gray;
+  font-weight: 300;
+  text-align: center;
+  padding: 50px 30px 0 30px;
+}
+main .section2 .increase a {
+  color: green;
+}
+main .section3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  margin: 50px 30px 0;
+  opacity: 0.9;
+}
+main .section3 .wire-section3 {
+  position: absolute;
+  top: 0;
+  left: 18%;
+  width: 120px;
+  height: 120px;
+}
+main .section3 .section3-left {
+  width: 50%;
+  height: 100%;
+}
+main .section3 .section3-left .section3-red {
+  font-size: 25px;
+  font-weight: 700px;
+  margin-top: 100px;
+  color: red;
+}
+main .section3 .section3-left .section3-large {
+  font-size: 45px;
+  font-weight: 900;
+  color: black;
+}
+main .section3 .section3-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section3 .section3-right img {
+  width: 200px;
+  height: 200px;
+}
+main .grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  margin: 20px 0;
+  width: 100%;
+  height: 160vh;
+  padding: 0 30px 100px 30px;
+  background-color: antiquewhite;
+  margin-top: 50px;
+}
+main .grid .grid-item {
+  margin: auto;
+  padding: 50px 70px 50px 70px;
+  width: 400px;
+  height: 450px;
+  border: none;
+  border-radius: 20px;
+  background-color: #fff;
+  position: relative;
+}
+main .grid .grid-item img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main .grid .grid-item .curve2 {
+  background-color: gold;
+}
+main .grid .grid-item:hover {
+  transition: 2s;
+}
+main .grid .number {
+  font-size: 72px;
+  font-weight: 900;
+  color: black;
+}
+main .grid .heading {
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+  margin-top: 30px;
+}
+main .grid .text {
+  font-size: 20px;
+  font-weight: 500;
+  color: gray;
+  margin-top: 30px;
+}
+main .grid .num1 {
+  background-color: orangered;
+}
+main .grid .num1 .number, main .grid .num1 .heading, main .grid .num1 .text {
+  color: #fff;
+}
+main .section5 {
+  width: 100%;
+  height: 190vh;
+  margin: 0;
+  padding: 0 20px 0 20px;
+  background-color: orangered;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .section5 .section5-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 60%;
+  height: 100%;
+  padding: 50px 20px 0 0;
+}
+main .section5 .section5-right img {
+  width: 700px;
+  height: 600px;
+}
+main .section5 .section5-left {
+  color: #fff;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+main .section5 .section5-left .section5-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 0 0 50px;
+}
+main .section5 .section5-left .section5-top .section5-wire {
+  margin: 0 0 -65px 240px;
+  width: 85px;
+  height: 85px;
+}
+main .section5 .section5-left .section5-top .font-size21 {
+  font-size: 21px;
+  line-height: 1.5rem;
+  font-weight: 700;
+  width: 360px;
+  padding: 50px 0 10px 0;
+}
+main .section5 .section5-left .section5-top .font-size48 {
+  font-size: 48px;
+  font-weight: 900;
+  width: 450px;
+}
+main .section5 .section5-left .section5-top .section5-enroll {
+  height: 50px;
+  width: 180px;
+  background-color: #fff;
+  color: red;
+  border: none;
+  border-radius: 100px;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+  font-size: 22px;
+  font-weight: 700;
+}
+main .section5 .section5-left .grid4 {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  padding: 0 0 0 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 50px;
+}
+main .section5 .section5-left .grid4 .grid-item4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 220px;
+  height: 80px;
+  border: 2px solid #fff;
+  border-radius: 100px;
+  font-size: 22px;
+  font-weight: 600;
+}
+main .section5 .section5-left .grid4 .grid-item4 img {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 100px;
+}
+main .section5 .section5-left .dot-section5 {
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+  height: auto;
+  padding: 0 0 0 30px;
+}
+main .section5 .section5-left .dot-section5 img {
+  width: 200px;
+  height: 200px;
+  margin: 70px auto;
+}
+main .section6 {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 2px solid dodgerblue;
+  width: 100%;
+  height: 250vh;
+  padding: 0 30px 0 30px;
+}
+main .section6 .section6-red {
+  font-size: 28px;
+  font-weight: 500;
+  color: red;
+}
+main .section6 .section6-large {
+  font-size: 48px;
+  font-weight: 700;
+  width: 40%;
+  margin-top: 5px;
+}
+main .section6 .wire-section6 {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 150px;
+}
+main .section6 .grid-section6 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 750px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+main .section6 .grid-section6 .grid-item_section6 {
+  width: 350px;
+  height: 350px;
+  border: 1px solid dodgerblue;
+  border-radius: 50px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 30px;
+}
+main .section6 .grid-section6 .grid-item_section6 .heading-section6 {
+  font-size: 28px;
+  font-weight: 900;
+  color: black;
+}
+main .section6 .grid-section6 .grid-item_section6 .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+main .section6 .grid-section6 .grid-item_section6 .icons1 {
+  width: 60%;
+  height: 60px;
+  border: 1px solid red;
+}
+main .section6 .grid-section6 .grid-item_section6 .icons1 img {
+  width: 50px;
+  height: 50px;
+}
+main .section6 .grid-section6 .grid-item_section6 .icons1 .js {
+  margin-top: -20px;
+}
+main .section6 .grid-section6 .grid-item_section6 .icons2 .icons1 {
+  width: 60%;
+  height: 60px;
+  border: 1px solid red;
+}
+main .section6 .grid-section6 .grid-item_section6 .icons2 .icons1 img {
+  width: 50px;
+  height: 50px;
+}
+main .section6 .grid-section6 .grid-item_section6 .icons2 .icons1 .js {
+  margin-top: -20px;
+}
+main .section6 .grid-section6 .grid-item_section6 .icons4 .icons1 {
+  width: 80%;
+  height: 60px;
+  border: 1px solid red;
+}
+main .section6 .grid-section6 .grid-item_section6 .icons4 .icons1 img {
+  width: 50px;
+  height: 50px;
+}
+main .section6 .grid-section6 .grid-item_section6 .icons4 .icons1 .js {
+  margin-top: -20px;
+}
+main .section6 .grid-section6 .grid-item_section6 .icons4 .enroll-section6 {
+  width: 200px;
+  height: 50px;
+  background-color: red;
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px;
+  margin: 50px auto;
+}
+main .section6 .grid-section6 .grid-item_section6 .text-section6 {
+  font-size: 20px;
+  font-weight: 400;
+  color: gray;
+  line-height: 1.5rem;
+  margin-top: 30px;
+}/*# sourceMappingURL=zuri.css.map */
