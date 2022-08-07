@@ -79,6 +79,10 @@ header .nav .Enroll .enroll {
 main {
   display: flex;
   flex-direction: column;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: auto;
 }
 main .section1 {
   margin: 120px 30px 0;
@@ -525,4 +529,235 @@ main .section6 .grid-section6 .grid-item_section6 .text-section6 {
   color: gray;
   line-height: 1.5rem;
   margin-top: 30px;
+}
+main .section7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 140vh;
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+  position: relative;
+}
+main .section7 .red-section7 {
+  font-size: 28px;
+  font-weight: 600;
+  color: red;
+  margin-top: 100px;
+}
+main .section7 .large-section7 {
+  font-size: 48px;
+  font-weight: 900;
+}
+main .section7 .wire-section7 {
+  position: absolute;
+  top: 0px;
+  left: 15%;
+  width: 150px;
+  height: 150px;
+}
+main .section7 .grid-section7 {
+  display: grid;
+  grid-template-columns: auto;
+  width: 75%;
+  height: 500px;
+  margin-top: 100px;
+}
+main .section7 .grid-section7 .grid-item-section7 {
+  width: 100%;
+  height: 100px;
+  border: 1px solid gray;
+  font-size: 20px;
+  font-weight: 900;
+  color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 0 30px;
+}
+main .section7 .bottom-section7 {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 420px;
+  height: 100px;
+}
+main .section7 .bottom-section7 .questions {
+  color: gray;
+  font-size: 20px;
+  font-weight: 500;
+}
+main .section7 .bottom-section7 .tweet {
+  background-color: orangered;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px 0 25px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  width: 230px;
+  height: 50px;
+  border: none;
+  border-radius: 100px;
+}
+main .section8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2000px;
+}
+main .section8 .flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 120vh;
+}
+main .section8 .flex .flex1, main .section8 .flex .flex2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 30px;
+  background-color: black;
+  height: 100%;
+  width: 48%;
+  border: none;
+  border-radius: 70px;
+  color: #fff;
+}
+main .section8 .flex .flex1 .large-section8, main .section8 .flex .flex2 .large-section8 {
+  font-size: 35px;
+  font-weight: 900;
+}
+main .section8 .flex .flex1 .p-section8, main .section8 .flex .flex2 .p-section8 {
+  font-size: 20px;
+  font-weight: 500;
+}
+main .section8 .flex .flex1 .heading-section8, main .section8 .flex .flex2 .heading-section8 {
+  font-size: 25px;
+  font-weight: 700;
+}
+main .section8 .flex .flex1 .row, main .section8 .flex .flex2 .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .section8 .flex .flex1 .bullet, main .section8 .flex .flex2 .bullet {
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 100px;
+  background-color: #fff;
+  margin-right: 10px;
+}
+main .section8 .large-orange {
+  width: 80%;
+  height: 400px;
+  background-color: red;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  padding: 50px 0 50px 0;
+  position: relative;
+  border: 1px solid dodgerblue;
+}
+main .section8 .large-orange .main {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+}
+main .section8 .large-orange .curveiii {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  transform: rotate(180deg);
+}
+main .section8 .large-orange .round {
+  position: absolute;
+  bottom: 40%;
+  left: 10%;
+  width: 150px;
+  height: 150px;
+}
+main .section8 .large-orange .small {
+  font-size: 21px;
+  font-weight: 700;
+  margin: 30px;
+}
+main .section8 .large-orange .large {
+  font-size: 48px;
+  font-weight: 900;
+  width: 400px;
+}
+main .section8 .large-orange .enroll {
+  font-size: 22px;
+  font-weight: 400;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 100px;
+  background-color: #fff;
+  color: red;
+  text-align: center;
+  padding: 15px;
+  margin: 30px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px 0 50px;
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
+}
+footer .footer-top, footer .footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  color: gray;
+}
+footer .social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+}
+footer .space {
+  margin-left: 20px;
 }/*# sourceMappingURL=zuri.css.map */
