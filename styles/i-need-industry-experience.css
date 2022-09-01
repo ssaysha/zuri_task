@@ -10,12 +10,13 @@ header {
   height: 80px;
   position: fixed;
   top: 0;
-  padding: 0 5% 0 10%;
+  padding: 0 50px 0 50px;
   background-color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
 }
 header nav {
   width: 50%;
@@ -26,9 +27,9 @@ header nav {
   justify-content: space-between;
   align-items: center;
 }
-header nav div {
+header nav .nav {
   height: 50px;
-  width: 80px;
+  width: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +37,7 @@ header nav div {
 header nav a {
   text-decoration: none;
   color: gray;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 500;
 }
 header nav .home {
@@ -52,13 +53,15 @@ header nav .hire {
 header nav .hire a {
   color: #fff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 500;
 }
 
 main {
   font-family: sans-serif;
   margin: 0 20px;
+  display: flex;
+  flex-direction: column;
 }
 main .section1 {
   display: flex;
@@ -69,6 +72,7 @@ main .section1 {
   width: 100%;
   height: 100vh;
   background-color: #fff;
+  padding: 50px;
 }
 main .section1 .section1-right {
   position: relative;
@@ -80,8 +84,8 @@ main .section1 .section1-right {
   align-items: center;
 }
 main .section1 .section1-right .pic1 {
-  width: 75%;
-  height: 80%;
+  max-width: 400px;
+  max-height: 500px;
 }
 main .section1 .section1-right .line1 {
   width: 250px;
@@ -94,60 +98,73 @@ main .section1 .section1-left {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
-  padding: 0 10% 0 10%;
+  align-items: flex-start;
   width: 60%;
   height: 100%;
+  position: relative;
+  padding: 0 0 100px 0;
 }
 main .section1 .section1-left .vetted {
   font-weight: 900;
   font-size: 38px;
   padding-top: -100px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: black;
+  padding: 0 0 30px 0;
 }
-main .section1 .section1-left .vetted span {
+main .section1 .section1-left .vetted .red {
   color: red;
 }
 main .section1 .section1-left .thick-line {
-  margin-top: -27px;
-  margin-right: -485px;
+  position: absolute;
+  top: 45%;
+  left: 65%;
 }
 main .section1 .section1-left .at-zuri {
-  padding-top: 50px;
   font-size: 20px;
   color: gray;
+  width: 60%;
 }
 main .section1 .section1-left .buttons {
-  padding: 50px 0 100px 0;
+  padding: 30px 0 0 0;
   font-size: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 60%;
 }
-main .section1 .section1-left .buttons .hire {
+main .section1 .section1-left .buttons .hire-talent {
   width: 42%;
-  height: 50px;
+  height: 40px;
   background-color: red;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 10px;
   border: none;
   border-bottom-right-radius: 10px;
 }
-main .section1 .section1-left .buttons .join {
+main .section1 .section1-left .buttons .hire-talent:hover {
+  box-shadow: 2px 2px 20px silver;
+}
+main .section1 .section1-left .buttons .join-the-pool {
   width: 55%;
-  height: 50px;
+  height: 40px;
   background-color: gray;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 10px;
   border: none;
   border-bottom-right-radius: 10px;
+}
+main .section1 .section1-left .buttons .join-the-pool:hover {
+  box-shadow: 2px 2px 30px silver;
 }
 main .section2 {
   display: flex;
@@ -156,7 +173,8 @@ main .section2 {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: bisque;
+  padding: 50px;
+  background-color: rgb(243, 221, 221);
 }
 main .section2 .section2-right {
   display: flex;
@@ -166,8 +184,8 @@ main .section2 .section2-right {
   height: 100%;
 }
 main .section2 .section2-right img {
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
 }
 main .section2 .section2-left {
   display: flex;
@@ -176,7 +194,6 @@ main .section2 .section2-left {
   align-items: flex-start;
   width: 50%;
   height: 100%;
-  padding: 0 0 0 10%;
 }
 main .section2 .section2-left .impact {
   font-weight: 900;
@@ -203,7 +220,7 @@ main .section2 .section2-left .countries {
   align-items: flex-start;
   width: 450px;
   height: 70px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 main .section2 .section2-left .countries .country {
   display: flex;
@@ -220,9 +237,10 @@ main .section3 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-color: aliceblue;
+  background-color: white;
   width: 100%;
   height: 100vh;
+  padding: 50px;
   position: relative;
 }
 main .section3 img {
@@ -239,7 +257,7 @@ main .section3 .skill span {
   color: red;
 }
 main .section3 .skills {
-  width: 80%;
+  width: 90%;
   height: 100px;
   display: flex;
   flex-direction: row;
@@ -258,6 +276,12 @@ main .section3 .skills .techies {
   color: gray;
   font-weight: 400;
   font-size: 20px;
+  box-shadow: 5px 5px 30px silver;
+  transition: width 0.5s, height 0.5s;
+}
+main .section3 .skills .techies:hover {
+  width: 255px;
+  height: 55px;
 }
 main .section3 .skills .github {
   width: 100px;
@@ -271,6 +295,12 @@ main .section3 .skills .github {
   color: gray;
   font-weight: 400;
   font-size: 20px;
+  box-shadow: 5px 5px 30px silver;
+  transition: width 0.5s, height 0.5s;
+}
+main .section3 .skills .github:hover {
+  width: 105px;
+  height: 55px;
 }
 main .section3 .skills .microsoft {
   width: 150px;
@@ -284,6 +314,12 @@ main .section3 .skills .microsoft {
   color: gray;
   font-weight: 400;
   font-size: 20px;
+  box-shadow: 5px 5px 30px silver;
+  transition: width 0.5s, height 0.5s;
+}
+main .section3 .skills .microsoft:hover {
+  width: 155px;
+  height: 55px;
 }
 main .section3 .skills .reskill {
   width: 200px;
@@ -297,6 +333,12 @@ main .section3 .skills .reskill {
   color: gray;
   font-weight: 400;
   font-size: 20px;
+  box-shadow: 5px 5px 30px silver;
+  transition: width 0.5s, height 0.5s;
+}
+main .section3 .skills .reskill:hover {
+  width: 195px;
+  height: 55px;
 }
 main .section3 .skills .flutter {
   width: 150px;
@@ -310,6 +352,12 @@ main .section3 .skills .flutter {
   color: gray;
   font-weight: 400;
   font-size: 20px;
+  box-shadow: 5px 5px 30px silver;
+  transition: width 0.5s, height 0.5s;
+}
+main .section3 .skills .flutter:hover {
+  width: 155px;
+  height: 55px;
 }
 main .section3 .skills .google {
   width: 100px;
@@ -323,6 +371,12 @@ main .section3 .skills .google {
   color: gray;
   font-weight: 400;
   font-size: 20px;
+  box-shadow: 5px 5px 30px silver;
+  transition: width 0.5s, height 0.5s;
+}
+main .section3 .skills .google:hover {
+  width: 95px;
+  height: 55px;
 }
 main .section3 .skills .carrier {
   width: 250px;
@@ -336,88 +390,173 @@ main .section3 .skills .carrier {
   color: gray;
   font-weight: 400;
   font-size: 20px;
+  box-shadow: 5px 5px 30px silver;
+  transition: width 0.5s, height 0.5s;
+}
+main .section3 .skills .carrier:hover {
+  width: 255px;
+  height: 55px;
 }
 main .section4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 3px solid red;
-  background-color: dodgerblue;
+  background-color: rgb(253, 237, 216);
   width: 100%;
-  height: 100vh;
+  height: 155vh;
+  padding: 50px;
 }
 main .section4 #section {
   text-align: center;
   font-weight: 900;
   font-size: 40px;
+  padding: 50px;
+}
+main .section4 #section .red {
+  color: red;
 }
 main .section4 .row1-section4 {
   width: 90%;
   display: grid;
-  grid-template-rows: auto;
-  grid-template-rows: 1/1;
-  gap: 20px;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+  padding: 30px;
 }
 main .section4 .row1-section4 .grid-item {
-  grid-column: 1fr;
-  width: 400px;
-  height: 400px;
+  width: 355px;
+  height: 285px;
+  font-size: 18px;
+  font-weight: 300;
+  color: gray;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
   border: none;
-  border-radius: 10px;
+  border-bottom-right-radius: 20px;
+}
+main .section4 .row1-section4 .grid-item img {
+  padding-bottom: 30px;
+}
+main .section4 .row1-section4 .grid-item:hover {
+  background-color: black;
+  color: #fff;
+}
+main .section4 .row2-section4 {
+  width: 59%;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 15px;
+  margin: 0 auto;
+}
+main .section4 .row2-section4 .grid2 {
+  width: 370px;
+  height: 285px;
+  font-size: 18px;
+  font-weight: 300;
+  color: gray;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-bottom-right-radius: 20px;
+}
+main .section4 .row2-section4 .grid2 img {
+  padding-bottom: 30px;
+}
+main .section4 .row2-section4 .grid2:hover {
+  background-color: black;
+  color: #fff;
+}
+main .section4 .buttons2 {
+  padding: 50px;
+  font-size: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 40%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: #fff;
 }
-
-footer {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
+main .section4 .buttons2 .hire_talent {
+  width: 42%;
+  height: 50px;
+  background-color: red;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 15px;
+  border: none;
+  border-bottom-right-radius: 10px;
+}
+main .section4 .buttons2 .join_the_pool {
+  width: 55%;
+  height: 50px;
+  background-color: gray;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 15px;
+  border: none;
+  border-bottom-right-radius: 10px;
+}
+main footer {
   background-color: black;
   width: 100%;
   height: 200px;
   margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 50px 30px 50px;
 }
-footer .section5-right {
-  width: 40%;
+main footer .section5-top {
+  width: 100%;
   height: 100%;
-}
-footer .section5-right div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 30%;
-  height: 100%;
-  border: 1px solid white;
 }
-footer .section5-right div p {
+main footer .section5-top div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+main footer .section5-top div img {
+  width: 35px;
+  height: 35px;
+}
+main footer .section5-top div .twitter {
+  width: 35px;
+  height: 35px;
+}
+main footer .section5-bottom {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   color: #fff;
   font-weight: 500;
+  margin-top: 50px;
+}
+main footer .section5-bottom .c-rgt {
+  font-size: 20px;
+}
+main footer .section5-bottom p {
   font-size: 16px;
-}
-footer .section5-right div .twitter {
-  width: 20px;
-  height: 20px;
-}
-footer .section5-left {
-  width: 60%;
-  height: 100%;
-}
-footer .section5-left div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 30%;
-  height: 100%;
-  border: 1px solid white;
-}
-footer .section5-left div .twitter {
-  width: 20px;
-  height: 20px;
 }/*# sourceMappingURL=i-need-industry-experience.css.map */
