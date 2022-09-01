@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+main {
+    background-color: #fff;
+    width: 50%;
+    height: fit-content;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: sans-serif;
+    h1 {
+        margin: 80px 0 50px;
+        font-weight: 900;
+        opacity: 0.7;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5rem;
+        color: rgb(68, 64, 64);
+      opacity: 0.8;
+        a {
+            text-decoration: none;
+            color: red;
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        height: 50px;
+        margin-top: 80px;
+        .i-am-new {
+            display: inline-block;
+            background-color: red;
+            border: none;
+            width: 46%;
+            height: 100%;
+            text-align: center;
+            padding-top: 15px;
+            a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: 700;
+                font-size: 16px;
+            }
+        }
+            .i-am-new:hover {
+                background-color: #fff;
+                border: 2px solid orangered;
+               a {
+                color: red;
+               }
+            }
+        .i-need-experience {
+            border: 2px solid red;
+            width: 46%;
+            height: 100%;
+            text-align: center;
+            padding-top: 15px;
+            a {
+                text-decoration: none;
+                color: red;
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+            .i-need-experience:hover {
+                 background-color: red;
+                 a {
+                    color: #fff;
+                 }
+            }
+    }
+}
